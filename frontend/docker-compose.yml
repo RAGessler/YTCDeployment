@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  socialfeed:
+    container_name: socialfeed
+    image: ragessler/yt_clone_front:latest
+    platform: linux/arm64
+    volumes:
+      - .:/app
+    ports:
+      - "80:80"
